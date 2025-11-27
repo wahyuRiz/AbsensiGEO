@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Absensi GEO</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Dashboard</string>
+    <string name="title_calendar">Kalender</string>
+    <string name="title_absensi">Abssensi</string>
+    <string name="title_upload_document">Dokumen</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

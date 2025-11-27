@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/containerItemRoot"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNamaPegawai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pegawai"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvJenisAbsensi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <TextView
+                android:id="@+id/tvKeterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hadir"
+                android:textColor="#388E3C"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <TextView
+                android:id="@+id/tvAlasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#388E3C"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <TextView
+                android:id="@+id/tvTanggalJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13 Mei 2025, 07:00"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tvSuratIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Surat"
+            android:textColor="#1976D2"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/ivFotoAbsensi"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

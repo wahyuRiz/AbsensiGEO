@@ -1,0 +1,4 @@
+<!-- res/drawable/today_circle.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#3F51B5" /> <!-- Warna biru misalnya -->
+</shape>

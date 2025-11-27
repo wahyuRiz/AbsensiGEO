@@ -1,0 +1,25 @@
+<!-- res/layout/dialog_jadwal.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etHari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hari (cth: Senin)" />
+
+    <EditText
+        android:id="@+id/etJam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jam (cth: 07.00 - 08.00)" />
+
+    <EditText
+        android:id="@+id/etMapel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mata Pelajaran" />
+</LinearLayout>

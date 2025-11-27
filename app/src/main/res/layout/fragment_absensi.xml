@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AbsensiFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_msk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absen Masuk" />
+
+            <Button
+                android:id="@+id/btn_plg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absen Pulang" />
+
+            <Button
+                android:id="@+id/btnIzinCuti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Izin/Cuti"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

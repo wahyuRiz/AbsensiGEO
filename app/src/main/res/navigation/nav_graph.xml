@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.absensigeo.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home_admin"
+        android:name="com.example.absensigeo.fragment.HomeAdminFragment"
+        android:label="Home Admin"
+        tools:layout="@layout/fragment_home_admin" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.absensigeo.fragment.CalendarFragment"
+        android:label="Kalender"
+        tools:layout="@layout/fragment_calendar"/>
+
+    <fragment
+        android:id="@+id/navigation_absensi"
+        android:name="com.example.absensigeo.fragment.AbsensiFragment"
+        android:label="Absensi"
+        tools:layout="@layout/fragment_absensi">
+        <action
+            android:id="@+id/action_absensiFragment_to_cameraPreviewFragment"
+            app:destination="@id/cameraPreviewFragment" />
+        <action
+            android:id="@+id/action_absensiFragment_to_izinCutiFragment"
+            app:destination="@id/izinCutiFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_upload_document"
+        android:name="com.example.absensigeo.fragment.TemplateSuratFragment"
+        android:label="Upload Template"
+        tools:layout="@layout/fragment_template_surat" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.absensigeo.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/navigation_Riwayat_Kehadiran"
+        android:name="com.example.absensigeo.fragment.RiwayatKehadiranFragment"
+        android:label="Riwayat Kehadiran"
+        tools:layout="@layout/fragment_riwayat_kehadiran">
+        <action
+            android:id="@+id/action_riwayatToFullscreen"
+            app:destination="@id/fullscreenImageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraPreviewFragment"
+        android:name="com.example.absensigeo.CameraPreviewFragment"
+        android:label="Camera Preview"
+        tools:layout="@layout/fragment_camera_preview" >
+        <argument
+            android:name="userId"
+            app:argType="string" />
+        <argument
+            android:name="absenId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_cameraPreviewFragment_to_absensiFragment"
+            app:destination="@id/navigation_absensi" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fullscreenImageFragment"
+        android:name="com.example.absensigeo.fragment.FullscreenImageFragment"
+        android:label="Gambar" >
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/absensiFragment"-->
+<!--        android:name="com.example.absensigeo.fragment.AbsensiFragment"-->
+<!--        android:label="Absensi"-->
+<!--        tools:layout="@layout/fragment_absensi">-->
+
+<!--        <action-->
+<!--            android:id="@+id/action_absensiFragment_to_izinCutiFragment"-->
+<!--            app:destination="@id/izinCutiFragment" />-->
+<!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/izinCutiFragment"
+        android:name="com.example.absensigeo.fragment.IzinCutiFragment"
+        android:label="Izin/Cuti"
+        tools:layout="@layout/fragment_izin_cuti" />
+
+
+</navigation>
